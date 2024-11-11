@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjectPbo_TaniEase
+namespace TaniAttire
 {
-    public partial class Dashboard : Form
+    public partial class KasirDashboard : Form
     {
-        public Dashboard()
+        public KasirDashboard()
         {
             InitializeComponent();
 

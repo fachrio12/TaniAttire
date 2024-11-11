@@ -1,6 +1,6 @@
-﻿namespace ProjectPbo_TaniEase
+﻿namespace TaniAttire
 {
-    partial class Dashboard
+    partial class KasirDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KasirDashboard));
             panelSidebar = new Panel();
             buttonLogOut = new Button();
             buttonLaporan = new Button();
@@ -49,8 +49,9 @@
             panelSidebar.Controls.Add(buttonBeranda);
             panelSidebar.Dock = DockStyle.Left;
             panelSidebar.Location = new Point(0, 0);
+            panelSidebar.Margin = new Padding(3, 4, 3, 4);
             panelSidebar.Name = "panelSidebar";
-            panelSidebar.Size = new Size(200, 450);
+            panelSidebar.Size = new Size(229, 600);
             panelSidebar.TabIndex = 0;
             // 
             // buttonLogOut
@@ -59,15 +60,16 @@
             buttonLogOut.ForeColor = Color.White;
             buttonLogOut.Image = (Image)resources.GetObject("buttonLogOut.Image");
             buttonLogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonLogOut.Location = new Point(12, 380);
+            buttonLogOut.Location = new Point(14, 507);
+            buttonLogOut.Margin = new Padding(3, 4, 3, 4);
             buttonLogOut.Name = "buttonLogOut";
-            buttonLogOut.Padding = new Padding(30, 0, 0, 0);
-            buttonLogOut.Size = new Size(176, 40);
+            buttonLogOut.Padding = new Padding(34, 0, 0, 0);
+            buttonLogOut.Size = new Size(201, 53);
             buttonLogOut.TabIndex = 4;
             buttonLogOut.Text = "   Log Out";
+            buttonLogOut.UseVisualStyleBackColor = false;
             buttonLogOut.MouseEnter += button_MouseEnter;
             buttonLogOut.MouseLeave += button_MouseLeave;
-            buttonLogOut.UseVisualStyleBackColor = false;
             // 
             // buttonLaporan
             // 
@@ -75,34 +77,34 @@
             buttonLaporan.ForeColor = Color.Green;
             buttonLaporan.Image = (Image)resources.GetObject("buttonLaporan.Image");
             buttonLaporan.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonLaporan.Location = new Point(12, 205);
+            buttonLaporan.Location = new Point(14, 273);
+            buttonLaporan.Margin = new Padding(3, 4, 3, 4);
             buttonLaporan.Name = "buttonLaporan";
-            buttonLaporan.Padding = new Padding(30, 0, 0, 0);
-            buttonLaporan.Size = new Size(176, 59);
+            buttonLaporan.Padding = new Padding(34, 0, 0, 0);
+            buttonLaporan.Size = new Size(201, 79);
             buttonLaporan.TabIndex = 3;
             buttonLaporan.Text = "    Laporan dan Forecasting";
-            buttonLaporan.MouseEnter += button_MouseEnter1;
-            buttonLaporan.MouseLeave += button_MouseLeave1;
             buttonLaporan.UseVisualStyleBackColor = false;
             buttonLaporan.Click += buttonLaporan_Click;
+            buttonLaporan.MouseEnter += button_MouseEnter1;
+            buttonLaporan.MouseLeave += button_MouseLeave1;
             // 
             // buttonTransaksi
             // 
-            Image originalImage = (Image)resources.GetObject("buttonTransaksi.Image");
-            Image resizedImage = new Bitmap(originalImage, new Size(24, 24));
             buttonTransaksi.BackColor = Color.White;
             buttonTransaksi.ForeColor = Color.Green;
-            buttonTransaksi.Image = resizedImage;
+            buttonTransaksi.Image = (Image)resources.GetObject("buttonTransaksi.Image");
             buttonTransaksi.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonTransaksi.Location = new Point(12, 159);
+            buttonTransaksi.Location = new Point(14, 212);
+            buttonTransaksi.Margin = new Padding(3, 4, 3, 4);
             buttonTransaksi.Name = "buttonTransaksi";
-            buttonTransaksi.Padding = new Padding(30, 0, 0, 0);
-            buttonTransaksi.Size = new Size(176, 40);
+            buttonTransaksi.Padding = new Padding(34, 0, 0, 0);
+            buttonTransaksi.Size = new Size(201, 53);
             buttonTransaksi.TabIndex = 2;
             buttonTransaksi.Text = "Transaksi";
+            buttonTransaksi.UseVisualStyleBackColor = false;
             buttonTransaksi.MouseEnter += button_MouseEnter1;
             buttonTransaksi.MouseLeave += button_MouseLeave1;
-            buttonTransaksi.UseVisualStyleBackColor = false;
             // 
             // buttonProduk
             // 
@@ -110,53 +112,54 @@
             buttonProduk.ForeColor = Color.Green;
             buttonProduk.Image = (Image)resources.GetObject("buttonProduk.Image");
             buttonProduk.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonProduk.Location = new Point(12, 113);
+            buttonProduk.Location = new Point(14, 151);
+            buttonProduk.Margin = new Padding(3, 4, 3, 4);
             buttonProduk.Name = "buttonProduk";
-            buttonProduk.Padding = new Padding(30, 0, 0, 0);
-            buttonProduk.Size = new Size(176, 40);
+            buttonProduk.Padding = new Padding(34, 0, 0, 0);
+            buttonProduk.Size = new Size(201, 53);
             buttonProduk.TabIndex = 1;
             buttonProduk.Text = "         Pengelolaan Produk";
-            buttonProduk.MouseEnter += button_MouseEnter1;
-            buttonProduk.MouseLeave += button_MouseLeave1;
             buttonProduk.UseVisualStyleBackColor = false;
             buttonProduk.Click += buttonProduk_Click;
+            buttonProduk.MouseEnter += button_MouseEnter1;
+            buttonProduk.MouseLeave += button_MouseLeave1;
             // 
             // buttonBeranda
             // 
-            Image original = (Image)resources.GetObject("buttonBeranda.Image");
-            Image resized = new Bitmap(original, new Size(24, 24));
             buttonBeranda.BackColor = Color.ForestGreen;
             buttonBeranda.ForeColor = Color.White;
-            buttonBeranda.Image = resized;
+            buttonBeranda.Image = (Image)resources.GetObject("buttonBeranda.Image");
             buttonBeranda.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonBeranda.Location = new Point(12, 67);
+            buttonBeranda.Location = new Point(14, 89);
+            buttonBeranda.Margin = new Padding(3, 4, 3, 4);
             buttonBeranda.Name = "buttonBeranda";
-            buttonBeranda.Padding = new Padding(30, 0, 0, 0);
-            buttonBeranda.Size = new Size(176, 40);
+            buttonBeranda.Padding = new Padding(34, 0, 0, 0);
+            buttonBeranda.Size = new Size(201, 53);
             buttonBeranda.TabIndex = 0;
             buttonBeranda.Text = "Beranda";
+            buttonBeranda.UseVisualStyleBackColor = false;
             buttonBeranda.MouseEnter += button_MouseEnter1;
             buttonBeranda.MouseLeave += button_MouseLeave1;
-            buttonBeranda.UseVisualStyleBackColor = false;
             // 
             // labelBeranda
             // 
             labelBeranda.AutoSize = true;
             labelBeranda.Font = new Font("Arial", 24F, FontStyle.Bold);
             labelBeranda.ForeColor = Color.Green;
-            labelBeranda.Location = new Point(300, 40);
+            labelBeranda.Location = new Point(343, 53);
             labelBeranda.Name = "labelBeranda";
-            labelBeranda.Size = new Size(144, 37);
+            labelBeranda.Size = new Size(178, 46);
             labelBeranda.TabIndex = 1;
             labelBeranda.Text = "Beranda";
             // 
             // Dashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(labelBeranda);
             Controls.Add(panelSidebar);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Dashboard";
             Text = "Dashboard";
             Load += Dashboard_Load_1;
