@@ -1,4 +1,4 @@
-using System;
+gusing System;
 using System.Windows.Forms;
 using Npgsql;
 using TaniAttire;
@@ -35,6 +35,7 @@ namespace TaniAttire
                                 // Ambil role dari hasil query
                                 string role = reader["role"].ToString();
 
+                                // tes
                                 // Periksa role dan buka form yang sesuai
                                 if (role == "1")
                                 {
